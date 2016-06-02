@@ -1,0 +1,27 @@
+{
+  "name": "svg-flat-object",
+  "version": "0.0.1",
+  "description": "Parse and manipulate to a flat SVG object",
+  "main": "parser.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawicorti/svg-flat-object.git"
+  },
+  "author": "David Corticchiato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawicorti/svg-flat-object/issues"
+  },
+  "homepage": "https://github.com/dawicorti/svg-flat-object#readme",
+  "dependencies": {
+    "101": "1.5.0",
+    "hat": "0.0.3",
+    "sax": "1.2.1",
+    "svg-path-bounding-box": "1.0.4",
+    "svg-transform-parser": "0.0.1",
+    "transformation-matrix-js": "2.6.5"
+  }
+}
