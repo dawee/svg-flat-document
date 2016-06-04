@@ -12,17 +12,21 @@ npm install svg-flat-document
 
 ## Parse from SVG string
 
+
 ```js
 import SVGFlatDocument from 'svg-flat-document';
 
-let doc = new SVGFlatDocument().parse('
+let doc = SVGFlatDocument.parse(svgString);
+```
+
+*With svgString =*
+
+```xml
 <svg width=100>
   <g transform="translate(100, 0)">
     <rect id="me" x="0" y="0" width="100" height="200" />
   </g>
 </svg>
-');
-
 ```
 
 ## Retreive element
