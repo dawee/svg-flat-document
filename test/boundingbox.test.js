@@ -1,6 +1,7 @@
 import chai from 'chai';
 import pick from '101/pick';
 import BoundingBox from '../lib/boundingbox';
+import Matrix from 'transform-matrix';
 
 const assert = chai.assert;
 const assertValues = (name, values, attributes) => {
@@ -38,6 +39,15 @@ describe('BoundingBox', () => {
     let attributes = {d: 'm0,0 h 100 v 200 h -100 v -200'};
 
     assertValues('path', values, attributes);
+  });
+
+  it('should apply a translation', () => {
+    let values = {x: 100, y: 0, width: 100, height: 200};
+    let box = BoundingBox.fromNodeAttributes('rect', {x: 0, y: 0, width: 100, height: 200});
+    let matrix = new Matrix().translate(100, 0);
+
+    box.applyMatrix(matrix);
+    assert.deepEqual(values, pick(box, ['x', 'y', 'width', 'height']));
   });
 
 });

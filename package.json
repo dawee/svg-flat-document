@@ -1,6 +1,6 @@
 {
   "name": "svg-flat-document",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ES6 SVG document without tree (flat)",
   "main": "es5/lib/document.js",
   "scripts": {
