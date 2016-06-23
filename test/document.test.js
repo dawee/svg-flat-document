@@ -1,6 +1,6 @@
-import chai from 'chai';
-import pick from '101/pick';
-import SVGFlatDocument from '../lib/document';
+const chai = require('chai');
+const pick = require('101/pick');
+const SVGFlatDocument = require('../lib/document');
 
 const assert = chai.assert;
 

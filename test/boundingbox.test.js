@@ -1,7 +1,8 @@
-import chai from 'chai';
-import pick from '101/pick';
-import BoundingBox from '../lib/boundingbox';
-import Matrix from 'transform-matrix';
+const chai = require('chai');
+const pick = require('101/pick');
+const BoundingBox = require('../lib/boundingbox');
+const Matrix = require('transform-matrix');
+
 
 const assert = chai.assert;
 const assertValues = (name, values, attributes) => {
